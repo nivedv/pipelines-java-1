@@ -7,6 +7,10 @@ trigger:
 - main
 
 pool:
+  name: default
+  demands:
+    - JAVA_VERSION -equals "17"
+    - Maven
   vmImage: ubuntu-latest
 
 steps:
